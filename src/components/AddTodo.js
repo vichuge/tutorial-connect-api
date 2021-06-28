@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 class AddTodo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { input: '' };
+    this.state = { input: "" };
   }
 
-  updateInput = (input) => {
+  updateInput = input => {
     this.setState({ input });
   };
 
@@ -19,10 +19,10 @@ class AddTodo extends React.Component {
     return (
       <div>
         <input
-          onChange={(e) => this.updateInput(e.target.value)}
+          onChange={e => this.updateInput(e.target.value)}
           value={this.state.input}
         />
-        <button type="button" className="add-todo" onClick={this.handleAddTodo}>
+        <button className="add-todo" onClick={this.handleAddTodo}>
           Add Todo
         </button>
       </div>
