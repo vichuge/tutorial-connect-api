@@ -13,7 +13,9 @@
     "react-scripts": "1.1.4",
     "redux": "^4.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
