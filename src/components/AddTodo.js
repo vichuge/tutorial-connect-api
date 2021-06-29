@@ -15,7 +15,10 @@ class AddTodo extends React.Component {
 
   handleAddTodo = () => {
     // dispatches actions to add todo
+    this.props.addTodo(this.state.input)
+
     // sets state back to empty string
+    this.setState({ input: '' })
   };
 
   render() {
@@ -33,4 +36,4 @@ class AddTodo extends React.Component {
   }
 }
 
-export default connect(null, { addTodo })(AddTodo)
+export default connect(null, { addTodo })(AddTodo);
