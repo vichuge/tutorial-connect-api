@@ -6,9 +6,11 @@
   "main": "src/index.js",
   "dependencies": {
     "classnames": "2.2.6",
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
-    "react-scripts": "1.1.4"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,5 +18,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
