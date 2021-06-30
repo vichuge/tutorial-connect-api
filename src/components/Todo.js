@@ -7,7 +7,7 @@ import { toggleTodo } from "../redux/actions";
 const Todo = ({ todo }) => (
   <li
     className="todo-item"
-    onClick={() => {} /** dispatches action to toggle todo */}
+    onClick={() => { } /** dispatches action to toggle todo */}
   >
     {todo && todo.completed ? "👌" : "👋"}{" "}
     <span
@@ -21,7 +21,4 @@ const Todo = ({ todo }) => (
   </li>
 );
 
-export default connect(
-  null,
-  { toggleTodo }
-)(Todo);
+export default connect(null, { toggleTodo })(Todo);
