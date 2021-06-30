@@ -36,4 +36,5 @@ class AddTodo extends React.Component {
   }
 }
 
+// connect(null, mapDispatchToProps)(Component)
 export default connect(null, { addTodo })(AddTodo);
